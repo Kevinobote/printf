@@ -7,14 +7,14 @@
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
-/* FLAGS USED */
+/* FLAGS */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
 
-/* SIZE */
+/* SIZES */
 #define S_LONG 2
 #define S_SHORT 1
 
@@ -37,8 +37,6 @@ struct fmt
  * @fmt: The format.
  * @fm_t: The function associated.
  */
-
-int _putchar(char c);
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
